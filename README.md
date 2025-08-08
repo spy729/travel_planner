@@ -1,37 +1,35 @@
-🧳 AI Trip Planner
+**🧳 AI Trip Planner**
+
 An AI-powered travel planning app that generates personalized itineraries based on your preferences such as destination, trip duration, budget, and travel companions.
 
-✨ What It Does
-Google OAuth Login — Users can sign in with Google before generating trips.
+**✨ What It Does**
 
-Trip Preferences Form — Select your destination, number of days, budget, and travel companions.
+1- Google OAuth Login — Users can sign in with Google before generating trips.
 
-AI-Powered Itinerary Generation — Uses Gemini API to generate a custom trip plan.
+2- Trip Preferences Form — Select your destination, number of days, budget, and travel companions.
 
-Conditional Auth Check — If a non-logged-in user tries to generate a trip, a Google sign-in dialog will appear.
+3- AI-Powered Itinerary Generation — Uses Gemini API to generate a custom trip plan.
 
-Google Places Autocomplete — Helps users pick their travel destination easily.
+4- Conditional Auth Check — If a non-logged-in user tries to generate a trip, a Google sign-in dialog will appear.
 
-🛠 Tech Stack
+5- Google Places Autocomplete — Helps users pick their travel destination easily.
+
+**🛠 Tech Stack**
 Frontend:
 
 React 18
-
 Tailwind CSS
-
 @react-oauth/google (Google OAuth Login)
-
 react-google-places-autocomplete
-
 react-toastify
 
 Backend / API:
 
 Google Places API (for location autocomplete)
-
 Gemini API (for itinerary generation)
 
-🚀 Getting Started
+**🚀 Getting Started**
+
 1️⃣ Clone the repo
 bash
 Copy
@@ -54,40 +52,51 @@ bash
 Copy
 Edit
 npm run dev
-📌 Project Structure
+
+**📌 Project Structure**
+
 bash
+
 Copy
+
 Edit
+
 src/
- ├── assets/              # Images, logos
- ├── components/          # Reusable UI components (e.g., Header)
- ├── constants/           # Static options for form
- ├── service/             # API functions (Gemini, etc.)
- ├── pages/               # Main screens (CreateTrip, etc.)
- └── App.jsx              # App entry point
-🔮 Pending Work
-Login Flow
 
-Store and retrieve logged-in user details properly.
+   ├── assets/              # Images, logos
+ 
+   ├── components/          # Reusable UI components (e.g., Header)
+ 
+   ├── constants/           # Static options for form
+ 
+   ├── service/             # API functions (Gemini, etc.)
+ 
+   ├── pages/               # Main screens (CreateTrip, etc.)
+ 
+   └── App.jsx              # App entry point
 
-Add logout functionality.
+ 
+**🔮 Pending Work**
 
-Show user avatar/name in header when logged in.
+1- Login Flow
 
-Display Page
+2- Store and retrieve logged-in user details properly.
 
-Replace raw JSON trip plan with a styled itinerary view (cards, timelines, or daily breakdown).
+3- Add logout functionality.
 
-Add images, hotel recommendations, and map previews.
+4- Show user avatar/name in header when logged in.
 
-Improved Error Handling
+5- Display Page
 
-Better error messages for API failures.
+-Replace raw JSON trip plan with a styled itinerary view (cards, timelines, or daily breakdown).
 
-Handle expired Google tokens.
+-Add images, hotel recommendations, and map previews.
 
-📸 Preview
-(Add screenshots of the app UI once available)
+-Improved Error Handling
 
-📄 License
+-Better error messages for API failures.
+
+-Handle expired Google tokens.
+
+**📄 License**
 This project is licensed under the MIT License — feel free to use and modify it.
